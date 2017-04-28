@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--1:element中name跨多个xml全局保持唯一-->
+<!--2:element中如果android和ios查找方式不一致则通过ios和android标签单独配置，如果一致则使用general标签配置-->
+<!--3:查找方式支持xpath,name,class，如果这三种元素都配置则查找的顺序是xpath》name》class-->
+<elements>
+    <element key="uc.mainpage.loginlink">
+        <general>
+            <xpath>//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeScrollView[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]</xpath>
+        </general>
+    </element>
+    <element key="uc.mainpage.userinfolink">
+        <general>
+            <xpath>//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeScrollView[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[2]</xpath>
+        </general>
+    </element>
+    <element key="uc.mainpage.loginflag">
+        <general>
+            <name>立即登录</name>
+        </general>
+    </element>
+    <element key="uc.loginpage.username">
+        <general>
+            <class>TextField</class>
+        </general>
+    </element>
+    <element key="uc.loginpage.password">
+        <general>
+            <class>SecureTextField</class>
+        </general>
+    </element>
+    <element key="uc.loginpage.loginbtn">
+        <general>
+            <name>登录</name>
+        </general>
+    </element>
+    <element key="uc.loginpage.qqLoginbtn">
+        <general>
+            <xpath>//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[5]/XCUIElementTypeButton[1]</xpath>
+        </general>
+    </element>
+    <element key="uc.userinfopage.logoutbtn">
+        <general>
+            <xpath>//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable[1]/XCUIElementTypeCell[11]</xpath>
+        </general>
+    </element>
+</elements>

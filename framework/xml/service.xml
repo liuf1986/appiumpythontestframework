@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--1:element中name跨多个xml全局保持唯一-->
+<!--2:element中如果android和ios查找方式不一致则通过ios和android标签单独配置，如果一致则使用general标签配置-->
+<!--3:查找方式支持xpath,name,class，如果这三种元素都配置则查找的顺序是xpath》name》class-->
+<elements>
+    <element key="service.mainpage.life.96110">
+        <general>
+            <xpath>//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeScrollView[1]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell[7]</xpath>
+        </general>
+    </element>
+    <element key="service.mainpage.life.96110.cancel">
+        <general>
+            <name>取消</name>
+        </general>
+    </element>
+</elements>

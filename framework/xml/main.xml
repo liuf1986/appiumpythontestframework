@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--1:element中name跨多个xml全局保持唯一-->
+<!--2:element中如果android和ios查找方式不一致则通过ios和android标签单独配置，如果一致则使用general标签配置-->
+<!--3:查找方式支持xpath,name,class，如果这三种元素都配置则查找的顺序是xpath》name》class-->
+<elements>
+    <element key="main.bottom.bar.home">
+        <ios>
+            <name>首页</name>
+        </ios>
+        <android>
+            <xpath>//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]</xpath>
+        </android>
+    </element>
+    <element key="main.bottom.bar.uc">
+        <general>
+            <name>我的</name>
+        </general>
+    </element>
+    <element key="main.bottom.bar.service">
+        <general>
+            <name>服务</name>
+        </general>
+    </element>
+</elements>

@@ -30,7 +30,7 @@ class Driver(object):
                 if len(udids) > 0:
                     logging.info('未指定测试设备，从当前连接设备中选取:%s' % udids[0])
                     Driver.__driver = webdriver.Remote(
-                        command_executor='http://10.100.131.110:4723/wd/hub',
+                        command_executor='http://x.x.x.x:x/wd/hub',
                         desired_capabilities={
                             'app': Config.getAPP(),
                             'platformName': Config.getPlatform(),
@@ -43,7 +43,7 @@ class Driver(object):
                     logging.info('---------未检测到测试设备---------')
             else:
                 Driver.__driver = webdriver.Remote(
-                    command_executor='http://10.100.131.110:4723/wd/hub',
+                    command_executor='http://x.x.x.x:x/wd/hub',
                     desired_capabilities={
                         'app': Config.getAPP(),
                         'platformName': Config.getPlatform(),
